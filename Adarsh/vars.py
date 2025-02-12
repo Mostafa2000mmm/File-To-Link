@@ -9,9 +9,9 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID'))
-    API_HASH = str(getenv('API_HASH'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN'))
+    API_ID = int(getenv('22081293'))
+    API_HASH = str(getenv('6c800426d11c5fb6ede182290e1808be'))
+    BOT_TOKEN = str(getenv('7835727299:AAGXswl_arwU8Igzierhpp67USAwHIlZVsU'))
     name = str(getenv('SESSION_NAME', 'filetolinkbot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
@@ -22,7 +22,7 @@ class Var(object):
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME'))
+    OWNER_USERNAME = str(getenv('@Mostaafa8'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
